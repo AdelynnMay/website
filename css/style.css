@@ -1986,3 +1986,11 @@ img {
     height: auto;
   }
 }
+
+.nav-links {
+  display: none;
+}
+
+.nav-links.show {
+  display: block;
+}
