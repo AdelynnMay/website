@@ -2057,9 +2057,3 @@ img {
     display: flex !important;            /* show menu when JS toggles `.show` */
   }
 }
-
-/* desktop override */
-@media (min-width: 1456px) {
-  .menu_toggle { display: none !important; }
-  .nav_menu   { display: flex !important; position: static; background: transparent; flex-direction: row; padding: 0; }
-}
