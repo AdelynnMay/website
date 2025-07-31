@@ -1892,6 +1892,16 @@ img {
     }
 }
 
+@media (max-width: 1455px) {
+  .nav_menu {
+    display: none;
+  }
+
+  .nav_menu.show {
+    display: flex;
+  }
+}
+
 @media (max-width: 480px) {
   main {
     padding-top: 94px;
