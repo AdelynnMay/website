@@ -536,15 +536,12 @@
 	</script>
 		
 	<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggle = document.querySelector(".menu_toggle");
-    const nav = document.querySelector(".nav-links");
-
-    if (toggle && nav) {
-      toggle.addEventListener("click", function () {
-        nav.classList.toggle("show");
-      });
-    }
+  document.addEventListener("DOMContentLoaded", function() {
+    const btn = document.querySelector(".menu_toggle");
+    const nav = document.querySelector(".nav_menu");
+    btn.addEventListener("click", () => {
+      nav.classList.toggle("show");
+    });
   });
 </script>
 </body>

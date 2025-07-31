@@ -1987,10 +1987,46 @@ img {
   }
 }
 
-.nav-links {
-  display: none;
+@media (max-width: 1455px) {
+  .nav_menu {
+    display: none;
+    position: absolute;
+    top: 128px;
+    left: 0;
+    width: 100vw;
+    background-color: #213B64;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+  }
+
+
+.nav_menu.show {
+    display: flex;
+  }
+
+.menu_toggle {
+    display: block;
+    position: absolute;
+    top: 45px;
+    right: 20px;
+    z-index: 10000;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+  }
 }
 
-.nav-links.show {
-  display: block;
+@media (min-width: 1456px) {
+  .nav_menu {
+    display: flex !important;
+    position: static;
+    background: transparent;
+    flex-direction: row;
+    padding: 0;
+  }
+  .menu_toggle {
+    display: none !important;
+  }
 }
