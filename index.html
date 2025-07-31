@@ -537,9 +537,14 @@
 		
 	<script>
   document.addEventListener("DOMContentLoaded", function () {
-    document.querySelector(".menu_toggle").addEventListener("click", function () {
-      document.querySelector(".nav-links").classList.toggle("show");
-    });
+    const toggle = document.querySelector(".menu_toggle");
+    const nav = document.querySelector(".nav-links");
+
+    if (toggle && nav) {
+      toggle.addEventListener("click", function () {
+        nav.classList.toggle("show");
+      });
+    }
   });
 </script>
 </body>
