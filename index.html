@@ -462,12 +462,7 @@
 
 	</div>
 	
-	<script>
-document.querySelector(".menu_toggle").addEventListener("click", function() {
-    document.querySelector(".nav_menu").classList.toggle("show");
-});
-		
-</script>
+	
 	<script>
 		document.addEventListener('DOMContentLoaded', function () {
   const toggleButtons = document.querySelectorAll('.show_dropdown_button');
@@ -540,5 +535,12 @@ document.querySelector(".menu_toggle").addEventListener("click", function() {
 	});
 	</script>
 		
+	<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelector(".menu_toggle").addEventListener("click", function () {
+      document.querySelector(".nav_menu").classList.toggle("show");
+    });
+  });
+</script>
 </body>
 </html>
