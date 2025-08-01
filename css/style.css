@@ -843,14 +843,34 @@ body {
 	text-align: center;
 }
 
+.main_content_sample_product_page {
+  padding: 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
 .product_card {
   background-color: #ffffff;
-  padding: 15px;
+  padding: 1rem;
   border-radius: 8px;
+  box-sizing: border-box;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   text-align: center;
-  width: fit-content;
+  width: 100%;
+  max-width: 320px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.product_card img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  display: block;
 }
 
 .go_back_home {
@@ -873,9 +893,17 @@ body {
 
 @media (max-width: 768px) {
   .australian_category_header {
-    text-align: left;
-    padding-left: 20px;
-    padding-right: 20px;
+    text-align: center;
+    padding: 0.5rem 0;
+	font-size: 1rem;
+  }
+	
+  .more_hats_text ul {
+    flex-direction: column;
+  }
+
+  .more_hats_text ul li {
+    width: 100%;
   }
 }
 
@@ -921,6 +949,22 @@ body {
 	padding: 0px;
 	overflow: hidden;
 	opacity: .90;
+	display: flex;
+	gap: 0.5rem;
+	flex-wrap: wrap;
+}
+
+.more_hats_text ul li {
+  flex: 1 1 45%;
+  min-width: 140px;
+}
+.more_hats_text ul li a {
+  display: block;
+  padding: 8px;
+  background: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  text-align: center;
 }
 
 .more_hats_text li {
