@@ -1939,7 +1939,10 @@ img {
 @media (max-width: 1455px) {
   .nav_menu {
     display: none;
-	max-height: calc(100vh - 128px);
+	top: 128px;
+	bottom: 0;
+	left: 0;
+	width: 100vw;
 	overflow-x: hidden;
 	overflow-y: auto;
 	-webkit-overflow-scrolling: touch;
