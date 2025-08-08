@@ -2100,18 +2100,21 @@ img {
 /* mobile */
 @media (max-width: 1455px) {
   .menu_toggle {  
-    position: absolute; top: 45px; right: 20px; 
+    position: absolute; top: 50%; right: 20px; 
     background: none; border: none; font-size: 1.5rem; color: #fff; 
     z-index: 1000;
   }
   .nav_menu { 
     position: absolute;
-    top: 128px; left: 0;
+    top: 100%; left: 0;
     width: 100vw;
     background: #213B64;
     flex-direction: column;
     align-items: center;
     padding: 2rem 0;
     z-index:  999;
+  }
+  .nav_menu.show {
+    display: flex !important;
   }
 }
