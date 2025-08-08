@@ -2097,9 +2097,6 @@ img {
   }
 }
 
-.menu_toggle { display: none !important; }
-.nav_menu   { display: flex !important; }
-
 /* mobile */
 @media (max-width: 1455px) {
   .menu_toggle { 
