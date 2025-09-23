@@ -19,9 +19,9 @@
 			<img class="hat_logo" src="icons/May_Adelynn_HHLogo-01_2.png" width="124" height="124" alt=""/>
 			<img class="bag_icon" src="icons/bag_icon.png" width="55" height="55" alt=""/> 
 				
-				<button class="menu_toggle">☰ Menu</button>
+				<button class="menu_toggle" type="button" aria-controls="main-menu" aria-expanded="false">☰ Menu</button>
 				
-				<ul class="nav_menu">
+				<ul class="nav_menu" id="main-menu">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="#australian_hats">Australian Outback and Hiking Hats</a></li>
 					<li><a href="#fedora_felt_hats">Fedora Felt Hats</a></li>
@@ -542,12 +542,14 @@
 	if (!btn || !nav) return;
 	  
     btn.addEventListener("click", () => {
-      nav.classList.toggle("show");
+      const open = nav.classList.toggle("show");
+	  btn.setAttribute("aria-expanded", open ? "true" : "false");
     });
 	  
-	  nav.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", () => {
+	nav.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
       nav.classList.remove("show");
+	  btn.setAttribute("aria-expanded", "false");
     });
   });
   });
