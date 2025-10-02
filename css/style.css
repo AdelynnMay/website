@@ -490,6 +490,10 @@ body {
     padding: 0;
 }
 
+.nav_menu.show {
+	display: flex !important;
+}
+
 .nav_menu li {
 	display: inline-block;
 	flex: 1 1 auto;
