@@ -1790,6 +1790,7 @@ img {
   .nav_menu {
     display: flex !important;
 	flex-wrap: wrap;
+	gap: 15px 60px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
