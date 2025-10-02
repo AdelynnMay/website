@@ -1801,6 +1801,7 @@ img {
 @media (min-width: 1456px) {
   .nav_menu {
     display: flex !important;
+	flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -1809,6 +1810,10 @@ img {
     padding: 0;
     box-shadow: none;
   }
+	
+  .nav_menu li { 
+	  display:inline-block; width:auto; 
+	}
 
   .menu_toggle {
     display: none !important;
@@ -1935,6 +1940,7 @@ img {
 	display: none;
     top: 128px; 
 	left: 0;
+	right: 0;
 	bottom: 0;
     width: 100vw;
     background: #213B64;
@@ -1947,6 +1953,7 @@ img {
     z-index:  1000;
   }
 	.nav_menu li {
+		display: block;
 		width: 100%;
 		box-sizing: border-box;
 	}
@@ -1979,3 +1986,6 @@ img {
 		scroll-margin-top: 106px;
 	}
 }
+
+
+
